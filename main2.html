@@ -1182,29 +1182,50 @@
             .contact-grid { grid-template-columns: 1fr; }
             .contact-right { order: -1; }
         }
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000; /* Adjust color as needed */
+}
+
+.ai-logo-img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    object-fit: contain;
+}
+
+
     </style>
 </head>
 <body>
     <!-- Header & Navigation -->
     <header id="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Fynix Digital Solutions</a>
-                
-                <div class="mobile-toggle" id="mobileToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <!-- AI logo image -->
+                <img src="images\logo (2).png" alt="AI Logo" class="ai-logo-img">
+                Fynix Digital Solutions
+            </a>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
