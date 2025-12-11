@@ -561,9 +561,11 @@
 
         /* Portfolio Slider (horizontal auto-scroll) */
         .portfolio-slider {
-            overflow: hidden;
+            overflow-x: auto; /* allow horizontal scroll on small screens */
+            overflow-y: hidden;
             position: relative;
             padding: 20px 0;
+            -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
         }
 
         .portfolio-track {
@@ -1459,7 +1461,7 @@
                         <a class="portfolio-link" href="http://stallionrecruitment.com" target="_blank" rel="noopener">
                             <div class="portfolio-card">
                                 <div class="portfolio-image">
-                                    <img src="images\WhatsApp Image 2025-12-09 at 02.21.41_30863b51.jpg" alt="stallion recruitment">
+                                    <img src="images\stallion_template_r1_c1.gif" alt="stallion recruitment">
                                 </div>
                                 <div class="portfolio-content">
                                     <h3>stallion recruitment</h3>
@@ -1500,9 +1502,9 @@
                 
 
                     <div class="social-links" style="margin-top:22px;">
-                        <a class="social-link linkedin" href="https://www.linkedin.com/in/aman-engg/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-link instagram" href="https://www.instagram.com/aman_manii/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a class="social-link facebook" href="https://facebook.com" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-link linkedin" href="https://www.linkedin.com/company/fynix-limited/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-link instagram" href="https://www.instagram.com/fynix_limited/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="social-link facebook" href="https://www.facebook.com/profile.php?id=61584713345353" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="social-link gmail" href="mailto:amanahmed2274@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
                         <a class="social-link whatsapp" href="https://wa.me/+923100305769" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     
