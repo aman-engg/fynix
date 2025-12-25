@@ -556,6 +556,7 @@
         .portfolio-track {
             display: flex;
             gap: 30px;
+            justify-content: center;
         }
     
 
@@ -591,7 +592,7 @@
         .portfolio-card {
             min-width: 280px;
             max-width: 280px;
-           
+            height: 350px;
             padding: 40px;
             border-radius: 20px;
             border: 1px solid rgba(42, 45, 67, 0.06);
@@ -1451,6 +1452,16 @@
 
             <div class="portfolio-slider">
                 <div class="portfolio-track">
+                    <a class="portfolio-link" href="https://mujahidakbarh.github.io/star-kids-web-/" target="_blank" rel="noopener">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img src="images\image copy 3.png" alt="New Project">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3>New Project</h3>
+                                </div>
+                            </div>
+                        </a>
                         <a class="portfolio-link" href="http://www.wabsuite.com" target="_blank" rel="noopener">
                             <div class="portfolio-card">
                                 <div class="portfolio-image">
@@ -1458,7 +1469,6 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <h3>WAB Suite</h3>
-                                    <p>Where AI Chatbots Meet WhatsApp Automation and API Power</p>
                                 </div>
                             </div>
                         </a>
@@ -1470,7 +1480,6 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <h3>stallion recruitment</h3>
-                                    <p>Right people,Right jobs </p>
                                 </div>
                             </div>
                         </a>
@@ -1482,11 +1491,11 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <h3>Tapzoo</h3>
-                                    <p>A Fun project</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
+
+                        
             </div>
         </div>
     </section>
@@ -1518,6 +1527,24 @@
     <footer style="padding:40px 0;text-align:center;color:var(--gray);">
         <div class="container">© <strong>Fynix 2025</strong> All rights reserved.</div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (mobileToggle && navLinks) {
+                mobileToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+                // Close menu on link click
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
